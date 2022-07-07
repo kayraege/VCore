@@ -92,3 +92,27 @@ public class TestInventory extends VInventory {
 TestInventory inventory = new TestInventory();
 VInventory.openInventory(player, inventory);
 ```
+### Game Feature System
+```java
+package net.kayega.gamefeature.example;
+
+import net.kayega.gamefeature.VFeature;
+
+import java.util.Random;
+
+public class VHeadTopHeart extends VFeature {
+    public VHeadTopHeart(JavaPlugin plugin, String featureName) {
+        super(plugin, featureName);
+    }
+
+    @Override
+    public void onEnable() {
+        super.onEnable();
+    }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+    }
+}
+```
