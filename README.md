@@ -68,3 +68,8 @@ public void onEnable() {
 VParticle.sendParticle(player, player.getLocation(), Particle.HEART, 25, 10);
 ...
 ```
+### Title API
+```java
+VTitle.sendMessage(player, PacketPlayOutTitle.EnumTitleAction.TITLE, "§bVCore", 1, 2, 1);
+VTitle.sendMessage(player, PacketPlayOutTitle.EnumTitleAction.ACTIONBAR, "§bVCore", 1, 2, 1);
+```
