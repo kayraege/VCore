@@ -1,0 +1,9 @@
+name: VCore
+main: net.kayega.VCore
+version: 1.0.0
+author: Kayega
+description: VPlugin base
+
+commands:
+  test:
+    usage: /test
