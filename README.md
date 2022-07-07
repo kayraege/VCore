@@ -35,3 +35,31 @@ public void onEnable() {
 }
 ...
 ```
+### Custom Config
+```java
+package net.kayega;
+
+import net.kayega.utils.VConfig;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class TestConfig extends VConfig {
+    public TestConfig(JavaPlugin plugin) {
+        super(plugin, "test");
+    }
+}
+```
+```java
+...
+
+// PLUGIN MAIN
+TestConfig config;
+
+@Override
+public void onEnable() {
+    Bukkit.getServer().getPluginManager().registerEvents(this, this);
+    Bukkit.getServer().getConsoleSender().sendMessage("§6[§2VCore§6] §aVCore is activated!");
+
+    config = new TestConfig(this);
+}
+...
+```
