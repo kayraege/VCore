@@ -64,9 +64,7 @@ public void onEnable() {
 ```
 ### Particle Effects
 ```java
-...
 VParticle.sendParticle(player, player.getLocation(), Particle.HEART, 25, 10);
-...
 ```
 ### Title API
 ```java
