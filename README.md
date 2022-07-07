@@ -73,3 +73,18 @@ VParticle.sendParticle(player, player.getLocation(), Particle.HEART, 25, 10);
 VTitle.sendMessage(player, PacketPlayOutTitle.EnumTitleAction.TITLE, "§bVCore", 1, 2, 1);
 VTitle.sendMessage(player, PacketPlayOutTitle.EnumTitleAction.ACTIONBAR, "§bVCore", 1, 2, 1);
 ```
+### Inventory GUI
+> Inventory Sizes: VInventorySize.Big, VInventorySize.Medium, VInventorySize.Small
+```java
+package net.kayega;
+
+import net.kayega.gui.VInventory;
+import net.kayega.gui.VInventorySize;
+import org.bukkit.event.inventory.InventoryType;
+
+public class TestInventory extends VInventory {
+    public TestInventory() {
+        super("§bVCore", InventoryType.PLAYER, VInventorySize.Big);
+    }
+}
+```
