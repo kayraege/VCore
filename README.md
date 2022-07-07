@@ -15,7 +15,7 @@ public class TestCommand extends VCommand {
 
     @Override
     public void run(Player player, JavaPlugin plugin) {
-
+        // TODO: Command
     }
 }
 ```
