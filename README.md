@@ -88,3 +88,7 @@ public class TestInventory extends VInventory {
     }
 }
 ```
+```java
+TestInventory inventory = new TestInventory();
+VInventory.openInventory(player, inventory);
+```
