@@ -1,5 +1,6 @@
 # VCore
 > VCore, sadece **Kayega** adlı kişilerin yaptığı pluginlerde kullanılmaktadır!
+> VCore, plugini daha basitleştirerek kolay ve kısa sürede yapılmasınız sağlar.
 
 ### Command Create
 ```java
