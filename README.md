@@ -21,6 +21,9 @@ public class TestCommand extends VCommand {
 ```
 ## Command Register
 ```java
+...
+
+// PLUGIN MAIN
 @Override
 public void onEnable() {
     Bukkit.getServer().getPluginManager().registerEvents(this, this);
@@ -28,4 +31,5 @@ public void onEnable() {
 
     VCommand.registerCommand(this, new TestCommand(this));
 }
+...
 ```
