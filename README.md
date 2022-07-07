@@ -1,6 +1,7 @@
 # VCore
+> VCore, sadece **Kayega** adlı kişilerin yaptığı pluginlerde kullanılmaktadır!
 
-## Command Create
+### Command Create
 ```java
 package net.kayega;
 
@@ -19,7 +20,7 @@ public class TestCommand extends VCommand {
     }
 }
 ```
-## Command Register
+### Command Register
 ```java
 ...
 
