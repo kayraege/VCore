@@ -21,7 +21,6 @@ public class TestCommand extends VCommand {
     }
 }
 ```
-### Command Register
 ```java
 ...
 
