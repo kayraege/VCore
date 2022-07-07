@@ -1,6 +1,6 @@
 # VCore
 
-## Usage (Commands)
+## Command Create
 ```java
 package net.kayega;
 
@@ -17,5 +17,15 @@ public class TestCommand extends VCommand {
     public void run(Player player, JavaPlugin plugin) {
         // TODO: Command
     }
+}
+```
+## Command Register
+```java
+@Override
+public void onEnable() {
+    Bukkit.getServer().getPluginManager().registerEvents(this, this);
+    Bukkit.getServer().getConsoleSender().sendMessage("§6[§2VCore§6] §aVCore is activated!");
+
+    VCommand.registerCommand(this, new TestCommand(this));
 }
 ```
