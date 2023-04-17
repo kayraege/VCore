@@ -9,7 +9,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>vcore</name>
+    <name>VCore</name>
 
     <properties>
         <java.version>1.8</java.version>
