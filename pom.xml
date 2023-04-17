@@ -113,12 +113,5 @@
             <version>3.2.5</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.github.yannicklamprecht</groupId>
-            <artifactId>worldborderapi</artifactId>
-            <version>1.180.0</version>
-            <classifier>dev</classifier>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 </project>
