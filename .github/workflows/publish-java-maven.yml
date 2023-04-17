@@ -1,18 +1,14 @@
-name: Publish package to GitHub Packages
-on: push
+name: Pull request labeler
+on: [ pull_request_target ]
+
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
-  publish:
-    runs-on: ubuntu-latest 
-    permissions: 
-      contents: read
-      packages: write 
+  triage:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
+      - uses: actions/labeler@v4
         with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Publish package
-        run: mvn --batch-mode deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
