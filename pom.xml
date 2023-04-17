@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.kayega</groupId>
-    <artifactId>VCore</artifactId>
+    <artifactId>vcore</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -57,7 +57,7 @@
         <repository>
             <id>github</id>
             <name>Github Packages</name>
-            <url>https://maven.pkg.github.com/kayraegek18/VCore</url>
+            <url>https://maven.pkg.github.com/kayraegek18/vcore</url>
         </repository>
     </distributionManagement>
 
