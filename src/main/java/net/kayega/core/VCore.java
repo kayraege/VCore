@@ -1,7 +1,6 @@
 package net.kayega.core;
 
 import net.kayega.core.armorequip.ArmorListener;
-import net.kayega.core.util.VBorder;
 //import net.kayega.core.vcloud.commands.VCloudCommand;
 import net.kayega.core.vinv.VInvManager;
 import org.bukkit.Bukkit;
@@ -18,7 +17,6 @@ public final class VCore extends JavaPlugin {
 
     //private static VCloud vCloud;
     private VCoreConfig coreConfig;
-    private VBorder border;
 
     @Override
     public void onEnable() {
@@ -32,7 +30,6 @@ public final class VCore extends JavaPlugin {
         //new VCloudCommand(this);
 
         coreConfig = new VCoreConfig(this);
-        border = new VBorder(this);
 
         // Startup message
         sendConsoleMessage(name, versionType, version, "§aPlugin Enabled!");
@@ -68,10 +65,6 @@ public final class VCore extends JavaPlugin {
 
     public static boolean isWorldBorderApiEnabled() {
         return Bukkit.getServer().getPluginManager().getPlugin("WorldBorderAPI") != null;
-    }
-
-    public VBorder getBorderApi() {
-        return this.border;
     }
 
     /*public static VCloud getVCloud() {
